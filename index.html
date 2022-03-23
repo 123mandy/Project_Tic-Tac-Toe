@@ -10,18 +10,41 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="title">TIC TAC TOE</h1>
-        <div id="box1" class="box top left"></div>
-        <div id="box2" class="box top"></div>
-        <div id="box3" class="box top right"></div>
-        <div id="box4" class="box left"></div>
-        <div id="box5" class="box"></div>
-        <div id="box6" class="box right"></div>
-        <div id="box7" class="box bottom left"></div>
-        <div id="box8" class="box bottom"></div>
-        <div id="box9" class="box bottom right"></div>
-        <button>Restart</button>
+    <div class="mainContent">
+        <div class="playerX">
+            <input type="file" id="tokens_x" accept="image/png, image/jpg">
+            <p>Point: <span id="xPoint">0</span></p>
+            <div class="playerBorder">
+                <p class="player1name">Player X</p>
+                <img class="profileX" src="img/playerX.png" alt="">
+            </div>
+            <p class="turnLeft">Your Turn</p>
+            <!-- <img class="Xwinning" src="img/party-time-jolly.gif" alt=""> -->
+        </div>
+        <div class="playerO">
+            <input type="file" id="tokens_o" accept="image/png, image/jpg">
+            <p>Point: <span id="oPoint">0</span></p>
+            <div class="playerBorder">
+                <p class="player2name">Player O</p>
+                <img class="profileO" src="img/playerO.png" alt="">
+            </div>
+            <p class="turnRight">Your Turn</p>
+            <!-- <img class="Owinning" src="img/party-time-jolly.gif" alt=""> -->
+        </div>
+        <div class="container">
+            <h1 class="title">TIC TAC TOE</h1>
+            <div id="box1" class="box top left"></div>
+            <div id="box2" class="box top"></div>
+            <div id="box3" class="box top right"></div>
+            <div id="box4" class="box left"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box right"></div>
+            <div id="box7" class="box bottom left"></div>
+            <div id="box8" class="box bottom"></div>
+            <div id="box9" class="box bottom right"></div>
+            <button>Restart</button>
+        </div>
+        <audio src="audio/audio.mp3"></audio>
     </div>
 </body>
 

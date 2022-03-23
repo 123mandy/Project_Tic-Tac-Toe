@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@400;500&display=swap');
+
+body{
+    font-family: 'Righteous', cursive;
+    background-color: #FDF6EC;
+}
+
+.mainContent{
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.playerX{
+    position:absolute;
+    top: 80px;
+    left: 0;
+    width: 150px;
+    text-align: center;
+}
+
+.playerO{
+    position:absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    text-align: center;
+   
+}
+.turnRight{
+    visibility: hidden;
+    text-align: center;
+    font-size: 30px;
+    color: #B7CADB;
+}
+.turnLeft{
+    
+    text-align: center;
+    font-size: 30px;
+    color: #B7CADB;
+}
+.visible{
+    visibility: visible;
+}
+.unvisible{
+    visibility: hidden;
+}
+
+.playerBorder{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+}
+.profileX, .profileO{
+    width: 140px;
+}
 .container{
     width: 420px;
     margin: 0 auto;
@@ -18,9 +75,12 @@
     font-size: 20px;
     line-height: 140px;
 }
+
+
 .title{
-    font-size: 30px;
+    font-size: 50px;
     margin: 50px;
+    color: #DAB88B;
 }
 .top{
     border-top: none;
@@ -36,6 +96,13 @@
 
 .right{
     border-right: none;
+}
+
+.player1{
+    position: absolute;
+    top: 0;
+    left: 300;
+    font-size: 20px;
 }
 
 button{
@@ -62,5 +129,17 @@ button{
 }
 
 p{
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.Xwinning {
+    position: absolute;
+    width: 300px;
+    left:-100px
+}
+
+.Owinning {
+    position: absolute;
+    width: 300px;
+    right:-100px
 }
