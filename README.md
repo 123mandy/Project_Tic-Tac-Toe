@@ -1,7 +1,12 @@
 TIC TAC TOE - Week 3 version
 =====================================
 
-This is a simple tic-tac-toe web game, developed by ***HTML, CSS, JAVASCRIPT AND JQUERY***! <br/>
+This is a simple tic-tac-toe web game, using<br/>
+   1. **HTML**
+   2. **CSS**
+   3. **JAVASCRIPT (+ JQUERY)**
+</br>
+
 Try it and leave your comment! Ready to recieve any 
 feedback!
 </br>
@@ -31,7 +36,7 @@ See this link as brief --- [Brief link](https://gist.github.com/wofockham/8e959d
 
 ***
 ## Bug and solution
-When the prompt poped up, the css styling of the web page missed. In order to fix this bug, I use ```setTimeOut``` to make the pop-up window run after the page fully loads.
+* When the prompt poped up befor the css styling of the web page loads. In order to fix this bug, I use ```setTimeOut``` to make the pop-up window run after the page fully loads.
 
 ```javascript
 const namePlayer = function () {
@@ -50,5 +55,5 @@ const namePlayer = function () {
 }
 setTimeout(namePlayer, 200);
 ```
-When player X use the last play to win the game, sometimes may have bugs to show both winning condition and tie condition. In order to fix this bug, put the if statement of tie condition out of the for loop whick checks the winning condition.
+* When player X use the last play to win the game, sometimes may have bugs to show both winning condition and tie condition. In order to fix this bug, put the if statement of tie condition out of the for loop which checks the winning condition.
 

@@ -13,7 +13,6 @@ const namePlayer = function () {
         $('.player2name').text("Player O")
     }
 }
-
 setTimeout(namePlayer, 200);
 
 // upload the tokens images, if you don't upload, will use the default tokens
@@ -39,7 +38,7 @@ $('#tokens_o').on("change", function () {
     }
 })
 
-// restart button function, just leave the points of each player
+// restart button function
 $('button').on('click', function () {
     $('img.imgX').remove();
     $('img.imgO').remove();
@@ -87,9 +86,7 @@ const addPlayerImg = function () {
 $('.box').on('click', addPlayerImg);
 
 // write checkWinner function 
-
 const checkWinner = function () {
-
     // set winning condition
     const winningCondition = [
         [0, 1, 2],
