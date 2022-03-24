@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fredericka+the+Great&family=Righteous&family=Ubuntu:wght@400;500&display=swap');
 body{
-    font-family: 'Righteous', cursive;
+    font-family: 'Fredericka the Great', cursive;
     background-color: #FDF6EC;
 }
 
@@ -78,7 +77,8 @@ body{
 
 
 .title{
-    font-size: 50px;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 40px;
     margin: 50px;
     color: #DAB88B;
 }
@@ -113,6 +113,8 @@ button{
 }
 
 .imgX{
+    animation-duration:0.5s;
+    animation-name: imgScale;
     position: absolute;
     max-width: 140px;
     height: 140px;
@@ -121,6 +123,8 @@ button{
 }
 
 .imgO{
+    animation-duration:0.5s;
+    animation-name: imgScale;
     position: absolute;
     max-width: 140px;
     height: 140px;
@@ -128,18 +132,64 @@ button{
     left:0;
 }
 
+@keyframes imgScale {
+    from{
+        transform: scale(0,0);
+    }to{
+        transform: scale(1,1);
+    }
+}
+
 p{
     font-size: 30px;
 }
 
 .Xwinning {
+    animation-duration:5s;
+    animation-name: movingAroundLeft;
     position: absolute;
     width: 300px;
-    left:-100px
+    left:-100px;
+    z-index: -2;
 }
 
 .Owinning {
+    animation-duration:5s;
+    animation-name: movingAroundRight;
     position: absolute;
     width: 300px;
-    right:-100px
+    right:-100px;
+    z-index: -2;
 }
+@keyframes movingAroundLeft {
+    from{
+        left:-100px
+    }
+    50%{
+        left:100px;
+    }
+    to{
+        left:-100px;
+    }
+}
+
+@keyframes movingAroundRight {
+    from{
+        right:-100px
+    }
+    50%{
+        right:100px;
+    }
+    to{
+        right:-100px;
+    }
+}
+.grass{
+  
+    position: absolute;
+    width: 900px;
+    left: 0;
+    top: 400px;
+    z-index: -1;
+}
+
