@@ -23,12 +23,11 @@ See this link as brief --- [Brief link](https://gist.github.com/wofockham/8e959d
 5. Animation and audio added
 6. Add logo to title bar
 
+7. ## AI play mode to be coming soon!
+
 ***
 ## Screen Shot
-![screen shots](img/screen shot.gif)
-
-
-
+![screen shots](img/small_screenshot.gif)
 
 ***
 ## Bug and solution
@@ -51,4 +50,5 @@ const namePlayer = function () {
 }
 setTimeout(namePlayer, 200);
 ```
+When player X use the last play to win the game, sometimes may have bugs to show both winning condition and tie condition. In order to fix this bug, put the if statement of tie condition out of the for loop whick checks the winning condition.
 

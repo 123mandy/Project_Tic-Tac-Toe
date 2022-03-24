@@ -130,33 +130,35 @@ const checkWinner = function () {
         if (imgA === imgB && imgB === imgC) {
             if (imgA === playerX) {
                 $('.playerX').append($imgX);
-                $('.turnRight').html("YOU LOSE T.T");
+                $('.turnRight').html("YOU LOSE!");
+                $('.turnLeft').html("YOU WIN!");
                 stopGame = true;
                 pointX++;
                 $('#xPoint').html(pointX);
                 $('audio')[0].play();
                 winner = true;
-
             }
             if (imgA === playerO) {
                 $('.playerO').append($imgO);
-                $('.turnLeft').html("YOU LOSE T.T");
+                $('.turnLeft').html("YOU LOSE!");
                 stopGame = true;
                 pointO++;
                 $('#oPoint').html(pointO);
                 $('audio')[0].play();
                 winner = true;
-
+                console.log(winner);
             }
             return;
         }
-        // if there is no winner
-        else if (tile1 !== undefined && tile2 !== undefined && tile3 !== undefined && tile4 !== undefined && tile5 !== undefined && tile6 !== undefined && tile7 !== undefined && tile8 !== undefined && tile9 !== undefined && winner === false) {
-            $('.turnLeft').html("CAT'S GAME");
-            $('.turnRight').html("CAT'S GAME");
-            $('.turnLeft').css("visibility", "visible");
-            $('.turnRight').css("visibility", "visible");
-        }
+    }
+    // if there is no winner
+    if (tile1 !== undefined && tile2 !== undefined && tile3 !== undefined && tile4 !== undefined && tile5 !== undefined && tile6 !== undefined && tile7 !== undefined && tile8 !== undefined && tile9 !== undefined && winner === false) {
+        $('.turnLeft').html("CAT'S GAME");
+        $('.turnRight').html("CAT'S GAME");
+        $('.turnLeft').css("visibility", "visible");
+        $('.turnRight').css("visibility", "visible");
+        console.log("tie");
+        console.log(winner);
     }
 }
 
