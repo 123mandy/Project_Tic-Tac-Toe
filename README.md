@@ -27,12 +27,16 @@ See this link as brief --- [Brief link](https://gist.github.com/wofockham/8e959d
 4. Keep track of **multiple game rounds** with a win counter
 5. Animation and audio added
 6. Add logo to title bar
+7. **You can play with Octocat!** You go first!
 
-7. ## AI play mode to be coming soon!
 
 ***
 ## Screen Shot
+**Player mode** </br>
 ![screen shots](img/small_screenshot.gif)
+
+**Ai mode added** </br>
+![screen shots](img/ai_screenshot.gif)
 
 ***
 ## Bug and solution

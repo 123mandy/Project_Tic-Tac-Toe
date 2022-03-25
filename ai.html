@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="playerX">
+            <input type="file" id="tokens_x" accept="image/png, image/jpg">
+            <p>Point: <span id="xPoint">0</span></p>
+            <div class="playerBorder">
+                <p class="player1name">Player X</p>
+                <img class="profileX" src="img/playerX.png" alt="">
+            </div>
+            <p class="turnLeft">Your Turn</p>
+        </div>
+        <div class="playerO">
+            <input type="file" id="tokens_o" accept="image/png, image/jpg">
+            <p>Point: <span id="oPoint">0</span></p>
+            <div class="playerBorder">
+                <p class="player2name">Octocat</p>
+                <img class="profileO" src="img/octocat.png" alt="">
+            </div>
+            <p class="turnRight">Your Turn</p>
+        </div>
+        <div class="container">
+            <h1 class="title">TIC TAC TOE</h1>
+            <div id="box0" class="box top left">
+            </div>
+            <div id="box1" class="box top">
+            </div>
+            <div id="box2" class="box top right">
+            </div>
+            <div id="box3" class="box left">
+            </div>
+            <div id="box4" class="box">
+            </div>
+            <div id="box5" class="box right">
+            </div>
+            <div id="box6" class="box bottom left">
+            </div>
+            <div id="box7" class="box bottom">
+            </div>
+            <div id="box8" class="box bottom right">
+            </div>
+            <button>Restart</button>
+            <a href="index.html">
+                <button>Player mode</button>
+            </a>
+            <img src="img/ZhkE.gif" alt="" class="grass">
+        </div>
+        <audio src="audio/audio.mp3"></audio>
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/js_ai.js"></script>
+    </div>

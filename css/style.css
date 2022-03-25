@@ -53,6 +53,7 @@ body{
 }
 .profileX, .profileO{
     width: 140px;
+    height: 140px;
 }
 .container{
     width: 420px;
